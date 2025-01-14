@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Premiers pas avec Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="CSS/css_2.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+</head>
+<body>
+    <h1>Carte interactive des résultats du 2nd tour des élections présidentielles 2022  pour la ville de Nantes</h1>
+    <div id="container">
+        <!-- Carte -->
+        <div id="map"></div>
+        
+        <!-- Panneau droit -->
+        <div id="right-panel">
+            <div id="right-panel">
+                <div id="photo-container" style="margin-bottom: 20px;">
+                    <h2>Photo du gagnant</h2>
+                    <img id="winner-photo" src="img/lepnvsmacron.webp" alt="Photo du gagnant" style="width: 100%; max-width: 300px; border-radius: 10px;">
+                </div>
+                <div id="chart-container" style="margin-top: 20px;">
+                    <h2></h2>
+                    <canvas id="chart" width="300" height="200"></canvas>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="DATA/js.js"></script>
+    <script src="JS/java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+<div id="footer">
+    <p>
+        Carte réalisée dans le cadre d'un cours du Master Géographie Numérique à l'Université de Lyon 2.
+        Auteurs : <strong>Paul Goullencourt, Rémi Membrede</strong>. Données issues de
+        <a href="https://data.nantesmetropole.fr/" target="_blank">data.nantesmetropole.fr</a>.
+    </p>
+    <div id="footer-logos">
+        <img src="img/geonum.png" alt="Logo Master" title="Master Géographie Numérique" />
+        <img src="img/Nantes.png" alt="Logo Nantes Data" title="Nantes Data" />
+        <img src="img/Logo_Université_Lumière_Lyon_2.png" alt="Logo Université Lyon 2" title="Université Lyon 2" />
+    </div>
+</div>
+
+</body>
+</html>
